@@ -6,7 +6,7 @@ function BotCollection({isBot,setIsBot, handleAddBot}){
 
 
     const handleDeleteBot = (id) => {
-        fetch(`https://json-server-vercel-eight-alpha.vercel.app/bots/${id}`, {
+        fetch(`http://localhost:3000/bots/${id}`, {
           method: 'DELETE'
         })
         .then(() => {
